@@ -21,7 +21,7 @@ action color: #2196F3 */
 /* Боді */
 body {
 
-    font-family: Roboto, sans-serif, Raleway, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     color: var(--primary-text-color)
 }
@@ -171,6 +171,22 @@ li {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
+.work-item {
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--title-text-color);
+}
+.description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color)
+}
 
 /* Наша Комантда */
 .team {
@@ -223,8 +239,7 @@ li {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-.contact {
-    
+.team-pos {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -233,6 +248,29 @@ li {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
+
+/* Buttons */
+.wrk-fltr .filter {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.wrk-fltr .filter:hover,
+.wrk-fltr .filter:focus {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--background-color);
+    background-color: var(--acsent-color);
+}
+
 
 /* Підвал */
 .footer {
