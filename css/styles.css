@@ -199,6 +199,15 @@ color: var(--title-text-color);
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
+.team-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    }
 .igor {
     
     font-style: normal;
@@ -247,6 +256,15 @@ color: var(--title-text-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+.name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
 }
 
 /* Buttons */
