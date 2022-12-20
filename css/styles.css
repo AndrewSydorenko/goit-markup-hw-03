@@ -236,7 +236,11 @@ margin-right: 50px;
 }
 
                             /* Наша Комантда */
-.container-team {
+.team-back {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--team-background);
 }
 .team {
@@ -341,9 +345,14 @@ margin-right: 50px;
 
                             /* Підвал */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--hero-background);
 }
 .map {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 9px;
     
     font-style: normal;
     font-weight: 400;
@@ -362,6 +371,8 @@ margin-right: 50px;
     color: var(--accent-color);
 }
 .address {
+    display: inline-block;
+    margin-bottom: 9px;
     
     font-style: normal;
     font-weight: 400;
@@ -439,18 +450,10 @@ margin-right: 50px;
 .works {
     padding-inline-start: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
     margin-top: 50px;
-    margin-bottom: 0;
-}
-.work {
-
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-right: 0;
-    margin-top: 0;
     margin-bottom: 0;
 }
 .work-title {
@@ -467,6 +470,7 @@ margin-right: 50px;
 .work-item {
     margin-top: 20px;
     margin-bottom: 4px;
+    margin-left: 24px;
 
     font-style: normal;
     font-weight: 700;
@@ -487,10 +491,14 @@ margin-right: 50px;
     height: 404px;
     width: 370px;
     margin-left: 0;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
 }
-.description {
+.works p {
+
     margin-top: 0;
     margin-bottom: 20px;
+    margin-left: 24px;
 
     font-style: normal;
     font-weight: 400;
@@ -498,8 +506,4 @@ margin-right: 50px;
     line-height: 30px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color)
-}
-.card-bottom {
-   
-    border: 1px solid #F5F4FA;
 }
