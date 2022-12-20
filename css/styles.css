@@ -1,26 +1,25 @@
-/* main text color: #757575
-second text color: #212121
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif;
-main background: #FFFFFF
-second background color: #F5F4FA
-third background color: #2F303A
-action color: #2196F3 */
-
 :root {
     --background-color: #FFFFFF;
     --primary-text-color: #757575;
     --title-text-color: #212121;
-    --acsent-color: #2196F3;
+    --accent-color: #2196F3;
     --hero-background: #2F303A;
     --team-background: #F5F4FA;
     --hero-color: #FFFFFF;
 }
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
 
-/* Боді */
+                            /* Боді */
 body {
-
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     color: var(--primary-text-color)
@@ -34,9 +33,24 @@ li {
 
     list-style-type: none;
   }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 
-/* Шапка */
+  }
+
+                            /* Шапка */
+header {
+    border-bottom: 1px solid #ECECEC;
+}
 .logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -44,7 +58,7 @@ li {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: var(--acsent-color);
+    color: var(--accent-color);
 }
 .logo-up {
 
@@ -66,7 +80,20 @@ li {
     letter-spacing: 0.03em;
     color: var(--background-color);
 }
+.site-nav {
+    display: flex;
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.nav-item:not(:last-child) {
+margin-right: 50px;
+}
 .site-nav .link {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
 
     font-style: normal;
     font-weight: 500;
@@ -74,6 +101,7 @@ li {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -83,7 +111,7 @@ li {
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--acsent-color);
+    color: var(--accent-color);
 }
 .site-nav .link.current {
     
@@ -92,10 +120,9 @@ li {
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--acsent-color);
+    color: var(--accent-color);
 }
 .tell {
-    
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -110,39 +137,83 @@ li {
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--acsent-color);
+    color: var(--accent-color);
 
 }
+.mail {
+    display: block;
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.mail li+li {
+    margin-left: 50px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    
+}
+.container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
-/* Герой */
+                            /* Герой */
 .hero {
-
+    text-align: center;
     background-color: var(--hero-background);
 }
 .hero-title {
-    
+    margin-top:0;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-color);
+    margin-bottom: 30px;
+    padding-top: 200px;
 }
 .hero-button {
-    
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    max-width: 216px;
+    padding: 10px 32px;
+    text-align: center;
+    border: 1px solid transparent;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
     cursor: pointer;
-    color: var(--hero-color)
+    color: var(--hero-color);
+    margin-bottom: 200px;
+}
+.section-title {
+    margin-top: 0;
+    display: none;
 }
 
-/* Переваги */
-.bonuses-title {
+                            /* Переваги */
+.bonuses {
+    display: block;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.bonus-count {
     
+    width: 1170px;
+    
+}
+.bonuses-title {
+    margin-bottom: 10px;
+    margin-top: 0;
+    margin-right: 30px;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -152,8 +223,11 @@ li {
     color: var(--title-text-color);
 }
 .bonuses-item  {
-    
-    font-style: normal;
+    margin-top: 0;
+    margin-right: 30px;
+
+    width: 270px;
+    font-style: regular;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -161,34 +235,10 @@ li {
     color: var(--primary-text-color);
 }
 
-/* Чим займаэмося */
-.work-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
+                            /* Наша Комантда */
+.container-team {
+    background-color: var(--team-background);
 }
-.work-item {
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--title-text-color);
-}
-.description {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color)
-}
-
-/* Наша Комантда */
 .team {
     background-color: var(--team-background);
     font-style: normal;
@@ -200,6 +250,8 @@ color: var(--title-text-color);
     color: var(--title-text-color);
 }
 .team-title {
+    margin-top: 0;
+    margin-bottom: 50px;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -208,8 +260,16 @@ color: var(--title-text-color);
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     }
+.team-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    }
 .igor {
-    
+    height: 368px;
+    width: 270px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -217,6 +277,7 @@ color: var(--title-text-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    background-color:var(--background-color);
 }
 .olga {
     
@@ -227,6 +288,7 @@ color: var(--title-text-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    background-color:var(--background-color);
 }
 .mykola {
     
@@ -237,6 +299,7 @@ color: var(--title-text-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    background-color:var(--background-color);
 }
 .misha {
     
@@ -247,8 +310,11 @@ color: var(--title-text-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    background-color:var(--background-color);
 }
 .team-pos {
+    margin-top: 0;
+    margin-bottom: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -258,6 +324,8 @@ color: var(--title-text-color);
     color: var(--primary-text-color);
 }
 .name {
+    margin-top: 0;
+    margin-bottom: 0;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -266,31 +334,12 @@ color: var(--title-text-color);
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-
-/* Buttons */
-.wrk-fltr .filter {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-}
-.wrk-fltr .filter:hover,
-.wrk-fltr .filter:focus {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1,6;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--background-color);
-    background-color: var(--acsent-color);
+.team-list h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-
-/* Підвал */
+                            /* Підвал */
 .footer {
     background-color: var(--hero-background);
 }
@@ -310,7 +359,7 @@ color: var(--title-text-color);
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--acsent-color);
+    color: var(--accent-color);
 }
 .address {
     
@@ -321,6 +370,11 @@ color: var(--title-text-color);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+.address-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
 .address:hover, .address:focus {
     
     font-style: normal;
@@ -328,5 +382,124 @@ color: var(--title-text-color);
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color:var(--acsent-color)
+    color:var(--accent-color)
+}
+
+
+
+                        /*  Portfolio */
+
+
+/* btns */
+
+.wrk-fltr .filter {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    align-items: center;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+}
+.wrk-fltr .filter:hover,
+.wrk-fltr .filter:focus {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    border-radius: 4px;
+   
+
+}
+.wrk-fltr .filter-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.filter-btn li:not(last child) {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+/* Cards */
+.works {
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.work {
+
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.work-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.work-item {
+    margin-top: 20px;
+    margin-bottom: 4px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+.work-list {
+    justify-content: space-around;
+    display: block;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.work-done {
+    height: 404px;
+    width: 370px;
+    margin-left: 0;
+}
+.description {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color)
+}
+.card-bottom {
+   
+    border: 1px solid #F5F4FA;
 }
