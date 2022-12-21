@@ -6,28 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     
 <!--Шапка сайту-->
-    <header class="container">
-        <div class="container-nav">
-            <nav class="nav">
-                <a href="./index.html" class ="logo">Web<span class="logo-up">Studio</span></a>
+    <header>
+        <div class="container">
+            <div class ="justify-box">
+                <nav class="nav">
+                    <a href="./index.html" class ="logo">Web<span class="logo-up">Studio</span></a>
 
-                <ul class="site-nav">
-                    <li class="nav-item"><a href="./index.html" class="link current">Студія</a></li>
-                    <li class="nav-item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-                    <li class="nav-item"><a href="./contacts.html" class="link">Контакти</a></li>
+                    <ul class="site-nav">
+                        <li class="nav-item"><a href="./index.html" class="link current">Студія</a></li>
+                        <li class="nav-item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+                        <li class="nav-item"><a href="./contacts.html" class="link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="mail">
+                    <li><a href="mailto:info@devstudio.com" class="tell">info@devstudio.com</a></li>
+                    <li><a href="tel:+38_096_111_11_11" class="tell">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <ul class="mail">
-                <li><a href="mailto:info@devstudio.com" class="tell">info@devstudio.com</a></li>
-                <li><a href="tel:+38_096_111_11_11" class="tell">+38 096 111 11 11</a></li>
-            </ul>
+            </div>
         </div>
     </header>
 
@@ -37,9 +38,9 @@
 <main>
     
 <!--Герой-->
-<section class="section">
-    <div class="hero">
-        <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
+<section class="section section-hero">
+    <div class="container">
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero-button">Замовити послугу</button> 
     </div>
 </section>
@@ -47,52 +48,46 @@
 <!--Переваги-->
 <section class="section">
     <div class="container">
-        <div class="bonus-count">
             <h2 class="section-title">Переваги</h2>
-                <ul class="bonuses">
-                    <li class="bonuses-list">
-                        <h3 class="bonuses-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="bonuses-item">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                    </li>
+            <ul class="bonuses">
+                <li class="bonuses-list">
+                    <h3 class="bonuses-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <p class="bonuses-item">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                </li>
 
-                    <li class="bonuses-list">
-                        <h3 class="bonuses-title">ПУНКТУАЛЬНІСТЬ</h3>   
-                        <p class="bonuses-item">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                    </li>
+                <li class="bonuses-list">
+                    <h3 class="bonuses-title">ПУНКТУАЛЬНІСТЬ</h3>   
+                    <p class="bonuses-item">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                </li>
 
-                    <li class="bonuses-list">
-                        <h3 class="bonuses-title">ПЛАНУВАННЯ</h3>
-                        <p class="bonuses-item">Так само консультація з широким активом значною мірою зумовлює.</p>
-                    </li>
+                <li class="bonuses-list">
+                    <h3 class="bonuses-title">ПЛАНУВАННЯ</h3>
+                    <p class="bonuses-item">Так само консультація з широким активом значною мірою зумовлює.</p>
+                </li>
 
-                    <li class="bonuses-list">
-                        <h3 class="bonuses-title">CУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                        <p class="bonuses-item">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                    </li>
+                <li class="bonuses-list">
+                    <h3 class="bonuses-title">CУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <p class="bonuses-item">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                </li>
                 </ul>
-        </div>
     </div>
 </section>
 
 <!--Чим займаємось-->
-<section class="section">
+<section class="section section-work">
     <div class="container">
-        <div class="work">
             <h2 class="work-title">Чим ми займаємося</h2>
                 <ul class="work-list">
                     <li><img src="./images/box1.jpg" alt="codding on a computer" width="370"></li>
                     <li><img src="./images/box2.jpg" alt="smartphone and laptop" width="370"></li>
                     <li><img src="./images/box3.jpg" alt="choosing a color an a tablet" width="370"></li>
                 </ul>
-        </div>
     </div>        
 </section>
 
 <!--Наша Команда-->
-<section class="section">
-    <div class="team-back">
+<section class="section section-team">
         <div class="container">
-            <div class="team">
                 <h2 class="team-title">Наша команда</h2>
                     <ul class="team-list">
                         <li class="igor">
@@ -117,9 +112,7 @@
                                 <p class="team-pos">UI Designer</p>
                         </li>
                     </ul>
-            </div>
         </div>
-    </div>
 </section>
 </main>
 

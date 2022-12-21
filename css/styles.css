@@ -31,9 +31,15 @@ a {
 
     text-decoration: none;
 }
-li {
+ul, li {
 
     list-style-type: none;
+    text-decoration: none;
+  }
+  h1, h2, h3{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
   }
   .section {
     padding-top: 94px;
@@ -43,6 +49,8 @@ li {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
   }
 
@@ -83,6 +91,8 @@ header {
     color: var(--background-color);
 }
 .site-nav {
+    padding: 0;
+    margin-left: 93px;
     display: flex;
     margin-right: 50px;
     margin-top: 0;
@@ -143,10 +153,12 @@ margin-right: 50px;
 
 }
 .mail {
-    display: block;
     display: flex;
+    justify-content: end;
     margin-bottom: 0;
     margin-top: 0;
+    margin-left: auto;
+    padding: 0;
 }
 .mail li+li {
     margin-left: 50px;
@@ -160,15 +172,23 @@ margin-right: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
+}
+.justify-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
                             /* Герой */
-.hero {
+.section-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background-color: var(--hero-background);
 }
 .hero-title {
-    margin-top:0;
+    width: 696px;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -176,8 +196,10 @@ margin-right: 50px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-color);
-    margin-bottom: 30px;
-    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+
 }
 .hero-button {
     background: #2196F3;
@@ -193,7 +215,7 @@ margin-right: 50px;
     line-height: 1.8;
     cursor: pointer;
     color: var(--hero-color);
-    margin-bottom: 200px;
+    
 }
 .section-title {
     margin-top: 0;
@@ -202,20 +224,15 @@ margin-right: 50px;
 
                             /* Переваги */
 .bonuses {
-    display: block;
     display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
     margin-top: 0;
     margin-bottom: 0;
-}
-.bonus-count {
-    
-    width: 1170px;
-    
+    padding-left: 0;
+    gap: 30px;
 }
 .bonuses-title {
-    margin-bottom: 10px;
-    margin-top: 0;
-    margin-right: 30px;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -223,10 +240,11 @@ margin-right: 50px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
+    margin-bottom: 10px;
 }
 .bonuses-item  {
     margin-top: 0;
-    margin-right: 30px;
+    margin-right: 0;
 
     width: 270px;
     font-style: regular;
@@ -236,24 +254,16 @@ margin-right: 50px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
+.section-work {
+    padding-top: 0;
+}
 
                             /* Наша Комантда */
-.team-back {
+.section-team {
     padding-top: 94px;
-    padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--team-background);
-}
-.team {
-    background-color: var(--team-background);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
 }
 .team-title {
     margin-top: 0;
@@ -272,6 +282,7 @@ margin-right: 50px;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    gap: 30px;
     }
 .igor {
     height: 368px;
@@ -284,6 +295,10 @@ margin-right: 50px;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     background-color:var(--background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .olga {
     
@@ -295,6 +310,10 @@ margin-right: 50px;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     background-color:var(--background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .mykola {
     
@@ -306,6 +325,10 @@ margin-right: 50px;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     background-color:var(--background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .misha {
     
@@ -317,6 +340,10 @@ margin-right: 50px;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     background-color:var(--background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-pos {
     margin-top: 0;
@@ -328,6 +355,7 @@ margin-right: 50px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    
 }
 .name {
     margin-top: 0;
@@ -450,13 +478,12 @@ margin-right: 50px;
 
 /* Cards */
 .works {
-    padding-inline-start: 0;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-
+    gap: 30px;
     margin-top: 50px;
     margin-bottom: 0;
+    padding-left: 0;
 }
 .work-title {
     margin-top: 0;
@@ -470,10 +497,6 @@ margin-right: 50px;
     color: var(--title-text-color);
 }
 .work-item {
-    margin-top: 20px;
-    margin-bottom: 4px;
-    margin-left: 24px;
-
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -482,7 +505,7 @@ margin-right: 50px;
     color: var(--title-text-color);
 }
 .work-list {
-    justify-content: space-around;
+    gap: 30px;
     display: block;
     display: flex;
     margin-top: 0;
@@ -496,11 +519,6 @@ margin-right: 50px;
     
 }
 .works p {
-
-    margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: 24px;
-
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -508,12 +526,9 @@ margin-right: 50px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color)
 }
-.works h2 {
-    margin-top: 0;
-    padding-top: 20px;
-}
 
 .works div {
+    padding: 20px;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
