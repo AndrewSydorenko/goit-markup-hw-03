@@ -24,7 +24,9 @@ body {
     font-style: normal;
     color: var(--primary-text-color)
 }
-
+img {
+    display: block;
+}
 a {
 
     text-decoration: none;
@@ -488,11 +490,10 @@ margin-right: 50px;
     padding-left: 0;
 }
 .work-done {
-    height: 404px;
     width: 370px;
     margin-left: 0;
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
+    
 }
 .works p {
 
@@ -506,4 +507,13 @@ margin-right: 50px;
     line-height: 30px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color)
+}
+.works h2 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.works div {
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
