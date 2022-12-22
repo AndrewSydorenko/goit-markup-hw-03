@@ -53,6 +53,9 @@ ul, li {
     padding-right: 15px;
 
   }
+  button {
+    cursor: pointer;
+  }
 
                             /* Шапка */
 header {
@@ -94,7 +97,7 @@ header {
     padding: 0;
     margin-left: 93px;
     display: flex;
-    margin-right: 50px;
+    margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
 
@@ -515,10 +518,10 @@ margin-right: 50px;
 .work-done {
     width: 370px;
     margin-left: 0;
-    margin-bottom: 30px;
     
 }
 .works p {
+    margin-bottom: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
